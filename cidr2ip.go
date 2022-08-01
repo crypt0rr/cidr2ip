@@ -104,8 +104,8 @@ func increment(ip net.IP) {
 }
 
 func usage() {
-	fmt.Fprintf(os.Stderr, "CIDR to IPs version %s\n", Version, "\n")
-	fmt.Fprintf(os.Stderr, "Usage:   $ cidr2ip [-f <filename>] <list of cidrs> \n\n")
+	fmt.Fprintf(os.Stderr, "CIDR to IPs version %s\n", Version)
+	fmt.Fprintf(os.Stderr, "\nUsage:   $ cidr2ip [-f <filename>] <list of cidrs> \n\n")
 	fmt.Fprintf(os.Stderr, "Example: $ cidr2ip -f cidrs.txt\n")
 	fmt.Fprintf(os.Stderr, "         $ cidr2ip 10.0.0.0/24\n")
 	fmt.Fprintf(os.Stderr, "         $ cat cidrs.txt | cidr2ip \n")
